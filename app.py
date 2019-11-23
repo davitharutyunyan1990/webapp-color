@@ -28,6 +28,7 @@ COLOR = random.choice(["red", "green", "blue", "blue2", "darkblue", "pink"])
 def main():
     # return 'Hello'
     return render_template('hello.html', name=socket.gethostname(), color=color_codes[COLOR])
+   # return render_template('hello.html', name=socket.gethostname(), color=COLOR_FROM_ENV)
 
 
 if __name__ == "__main__":
